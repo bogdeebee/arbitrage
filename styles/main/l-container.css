@@ -1,0 +1,16 @@
+.l-container {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 750px) {
+  .l-container {
+    max-width: 750px;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .l-container {
+    max-width: 1170px;
+  }
+}

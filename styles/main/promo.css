@@ -1,0 +1,211 @@
+.container_promo-background {
+  margin-top: 45px;
+  height: 420px;
+  background-image: url(../../images/background-for-promo.png);
+  background-size:  auto 420px;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+.promo {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.promo__title {
+  padding-top: 80px;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  font-weight: normal;
+  max-width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.promo__subtitle {
+  color: var(--color-for-input);
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  font-weight: lighter;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.promo__text {
+  text-transform: none;
+  color: var(--color-gray);
+  font-size: 18px;
+  font-weight: lighter;
+  letter-spacing: 0.5px;
+  margin-top: 42px;
+}
+/*timer*/
+.counter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 280px;
+  margin: 30px auto 0;
+  text-align: center;
+  font-size: 32px;
+  line-height: 28.3px;
+  letter-spacing: 0.5px;
+}
+.counter__days,
+.counter__hours,
+.counter__minutes,
+.counter__seconds {
+  height: 43px;
+  border-bottom: 2px solid #e0e1e2;
+  width: 60px;
+  position: relative;
+}
+.counter__days_inactive {
+  color: var(--color-inactive);
+  border-color: var(--color-inactive);
+}
+/* .counter__hours_inactive {
+  color: var(--color-inactive);
+  border-color: var(--color-inactive);
+}
+.counter__minutes_inactive {
+  color: var(--color-inactive);
+  border-color: var(--color-inactive);
+}
+.counter__seconds_inactive {
+  color: var(--color-inactive);
+  border-color: var(--color-inactive);
+} */
+
+/*colons between counter*/
+.counter__hours::before,
+.counter__minutes::before,
+.counter__seconds::before {
+  content: ":";
+  top: 0;
+  left: -10px;
+  position: absolute;
+  color: var(--color-inactive);
+  font-size: 32px;
+}
+
+/*specification of counter*/  
+.counter__text {
+  margin: 0 auto;
+  font-size: 12px;
+  font-weight: lighter;
+  top: -10px;
+  text-transform: lowercase;
+  color: #ffffff;
+  width: 60px;
+}
+
+/*email*/
+.promo-email {
+  top: 30px;
+}
+
+@media only screen and (min-width : 750px) {
+  .container_promo-background {
+    margin-left: auto;
+    margin-right: auto;
+    width: 730px;
+    height: 650px;
+    background-size:  750px auto;
+  }
+  .promo__title {
+    padding-top: 165px;
+    max-width: 437px;
+    font-size: 28px;
+    line-height: 52px;
+  }
+  .promo__subtitle {
+    max-width: 470px;
+  }
+  /*counter*/
+  .counter {
+    width: 500px;
+    margin: 60px auto 50px auto;
+    font-size: 60px;
+    font-weight: normal;
+    line-height: 52px;
+  }
+  .counter__days,
+  .counter__hours,
+  .counter__minutes,
+  .counter__seconds {
+    height: 68px;
+    width: 110px;
+  }
+  .counter__days_inactive {
+    color: var(--color-inactive);
+    border-color: var(--color-inactive);
+  }
+/* .counter__hours_inactive {
+    color: var(--color-inactive);
+    border-color: var(--color-inactive);
+  }
+  .counter__minutes_inactive {
+    color: var(--color-inactive);
+    border-color: var(--color-inactive);
+  }
+  .counter__seconds_inactive {
+    color: var(--color-inactive);
+    border-color: var(--color-inactive);
+  } 
+  */
+
+  /*colons between counter*/
+  .counter__hours::before,
+  .counter__minutes::before,
+  .counter__seconds::before {
+    font-size: 60px;
+    left: -15px;
+  }
+
+  /*specification of counter*/
+  .counter__text {
+    font-size: 14px;
+    top: -10px;
+    width: 110px;
+  }
+
+  /*email*/
+  .promo-email {
+    margin: 0 auto;
+    max-width: 570px;
+    height: 55px;
+  }
+  .email__input_for-promo {
+    width: 376px;
+  }
+  .email__download_for-promo {
+    width: 194px;
+  }
+}
+
+@media only screen and (min-width : 1170px) {
+  .container_promo-background {
+    margin-top: 100px;
+    width: 945px;
+    height: 800px;
+    background-size: 945px auto;
+  }
+  .promo__title {
+    padding-top: 130px;
+    font-size: 40px;
+    max-width: 615px;
+  }
+  .promo__subtitle {
+    font-size: 18px;
+    min-width: 555px;
+  }
+  .promo__text {
+    margin-top: 100px;
+  }
+  /*email*/
+  .promo-email {
+    margin-top: 50px;
+  }
+}

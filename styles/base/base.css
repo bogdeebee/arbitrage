@@ -1,0 +1,39 @@
+body {
+  min-width: 320px;
+  width: 100%;
+  background-color: #0b1119;
+  color: white;
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  background-image: url(../../images/background-screen.png);
+  background-size:  auto 370px;
+  background-repeat: no-repeat;
+  background-position: 50% 225px;
+}
+h1, h2, h3 {
+  margin: 0;
+}
+:root {
+  --color-orange: #b66d0e;
+  --color-for-input: #f99406;
+  --color-gray: #bdbdbd;
+  --color-for-content-box_line: #242930;
+  --color-for-about-autor_line: #373c42;
+  --color-inactive: #1b2128;
+}
+
+@media only screen and (min-width: 750px) {
+  body {
+    background-size:  auto 500px;
+    background-repeat: no-repeat;
+    background-position: calc(50vw - 30px) 0;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  body {
+    background-size:  850px auto;
+    background-repeat: no-repeat;
+    background-position: calc(50vw - 97px) -100px;
+  }
+}

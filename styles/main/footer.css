@@ -1,0 +1,39 @@
+.container_footer-background {
+  margin-top: 150px;
+  height: 80px;
+  background-color: #080d13;
+}
+.footer {
+  text-align: center;
+  font-size: 12px;
+  font-weight: lighter;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+}
+.footer__text {
+  padding-top: 25px;  
+}
+.footer__text_orange-uppercase {
+  text-transform: uppercase;
+  color: var(--color-for-input);
+}
+
+@media only screen and (min-width : 750px) {
+  .container_footer-background {
+    margin-top: 0;
+  }
+  .footer {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .footer__text {
+    padding-left: 15px;  
+    padding-top: 33px;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .container_footer-background {
+    margin-top: 50px;
+  }
+}
